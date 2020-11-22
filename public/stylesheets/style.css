@@ -1,0 +1,499 @@
+/* GENERAL */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 4.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 300;
+  z-index:1;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+a {
+  color:black;
+  font-weight: 600;    
+}
+
+a:hover { 
+  color:black; 
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.container-fluid {
+  text-align: center;
+}
+
+.flex {
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+}
+
+button:focus {
+  outline:none!important;
+}
+
+.btn-outline-secondary:focus {
+  box-shadow: none!important;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+background: rgb(53, 53, 53);
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgb(229,23,58);
+}
+
+
+/* NAVBAR */
+
+.bg-light {
+  background-color: rgb(255, 255, 255)!important;
+}
+
+.navbar-brand img {
+  max-height: 30px;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.nav-link.active {
+  color: rgb(229,23,58)!important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  text-align: center;
+}
+
+/* HEADER */
+
+.home {
+  min-height: 100vh;
+}
+
+header {
+  background-image: url(/images/background-header.JPG);
+  background-position: bottom;
+  position: relative;
+  min-height: 100vh;
+}
+
+header .row {
+  background-color:rgba(36,36,91,0.7);
+  align-items: center;
+  color: rgb(238,238,238);
+  text-transform: uppercase;
+}
+
+.contain-title-me{
+  padding-top: 10%;
+}
+
+.sous-titre-head {
+  margin-top: -0.4em;
+}
+
+.scroll-gif {
+  height: 50px;
+}
+
+
+/* CATEGORIES GENERAL */
+
+.bg-title-cat {
+  color: rgb(238,238,238);
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+}
+
+.black-title {
+  opacity: 0.03;
+}
+
+.title-cat {
+  min-height: 30vh;
+  background-color:#f5f5f5;
+}
+
+.title-cat-black {
+  min-height: 30vh;
+  background-color:#353535;
+}
+
+.grey-cat {
+  background-color:#f5f5f5;
+}
+
+.black-cat {
+  background-color:#353535;
+}
+
+
+/* PRESENTATION & COMPETENCES */
+
+.picture {
+  padding-bottom: 50px;
+  background-image: url(/images/manon-profil.jpg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center top;
+}
+
+.list-skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-skills li {
+  background-color: rgb(229,23,58);
+  width: max-content;
+  padding:  0px 10px 0px 10px;
+  border-radius: 50px;
+  margin: 5px;
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+}
+
+
+/* AVIS */
+
+.carousel {
+  background-color: rgb(36,36,91);
+  color: rgb(238,238,238);
+  min-height:30vh;
+  display: flex;
+  align-items: center;
+}
+
+.carousel span {
+  color: rgb(229,23,58);
+}
+
+.carousel-caption {
+  position: initial;
+  margin-bottom: 50px;
+}
+
+blockquote {
+  text-align: center;
+  padding: 5% 15% 0%;
+}
+
+
+/* PORTFOLIO */
+
+.project {
+  width:100%;
+  min-height: 200px;
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+}
+
+.details-project {
+  background-color:  rgb(229,23,58);
+  opacity: 0.6;    
+  width: 100%;
+  position: absolute;
+  top:100%;
+  left: 0%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.details-project img {
+  max-width: 40px;
+}
+
+.overflow-detail {
+width:100%;
+height:100%;
+position:absolute;
+left:0;
+overflow: hidden;
+cursor: pointer;
+}
+
+.project:hover .details-project {
+  display: block;
+  top: 0%;
+  transition: all 0.4s;
+}
+
+section {
+  display:flex;
+  justify-content: center;
+  min-height: 30vh;
+  padding: 0 10%;
+}
+
+article {
+  margin: 0 20px 80px 20px;
+}
+
+.name-project {
+  background-color: rgb(255, 255, 255);
+  width: max-content;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px;
+  position: absolute;
+  left: 11px;
+  bottom: -17px;
+}
+
+.type-project {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
+
+.year-project {
+  transform: rotate(-90deg);
+  color:rgb(255, 255, 255);
+  position: absolute;
+  right: -24px;
+  bottom: -10px;
+}
+
+.little-title-black {
+  color: rgb(207, 207, 207);
+  font-weight: 300;
+}
+
+#portfolio section:last-child {
+  padding-bottom: 10vh;
+}
+
+.filters-project {
+  padding-bottom: 70px;
+  list-style-type: none;
+}
+
+.filters-project a {
+  text-decoration: none;
+  color:rgb(255, 255, 255)!important;
+  font-weight: 400;
+  margin:10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor:  pointer;
+}
+
+.filters-project a.active {
+  background-color: rgb(229,23,58);
+}
+
+
+/* MODAL */
+
+.modal-dialog {
+  max-width: 70%;
+  margin: 0 0 0 auto;
+}
+
+.modal-dialog li {
+  font-size: 0.9em;
+}
+
+.modal .modal-dialog.modal-dialog-slideout {
+  transform: translate(100%,0);
+  transition-duration: 0.2s;
+}
+
+.modal.show .modal-dialog.modal-dialog-slideout {
+  transform: translate(0,0);
+  transition-duration: 0.4s;
+  height: 100%;
+}
+
+
+.modal-content {
+  min-height: 100vh;
+}
+
+.modal-body .container-fluid {
+  text-align: left;
+}
+
+.modal-header .close {
+  margin: -1rem auto -1rem -1rem;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+video {
+  padding: 0!important;
+  border: 1px solid lightgray;
+}
+
+.subtitle-project-modal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitle-project-modal h6 {
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+time {
+  border-left: 1px solid grey;
+  padding-left: 10px;
+  color:grey
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  width:100%
+}
+
+/* CONTACT */
+
+.contact-icon {
+  border: 1px solid #353535;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7px
+}
+
+.contact-icon img {
+  max-height: 40px;
+}
+
+.copyright {
+  color: rgb(155,155,155);
+  font-size: 12px;
+  font-weight: 300;
+  margin: 10px 0px;
+}
+
+.contact-links {
+  min-height: 65vh;
+  display:block;
+  background-color:#f5f5f5;
+}
+
+.contact-mail {
+  color:  rgb(229,23,58);
+  width:max-content;
+  margin: auto;
+}
+
+.contact-mail:hover {
+  color:  rgb(229,23,58);
+  text-decoration:none;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin:0
+}
+
+
+
+/* RESPONSIVE */
+
+@media (min-width:1740px){
+  .picture {
+    background-position: top;
+  }
+}
+
+@media (max-width:991px) {
+  section {
+    padding:0;
+  }
+  .picture {
+    background-image: url(/images/manon-profil-small.jpg);
+  }
+}
+
+@media (max-width:768px) {
+  .list-skills {
+      justify-content: center;
+  }
+  .contain-title-me {
+    padding-top: 23%;
+  }
+  .picture img {
+    display:block;
+    width:100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .picture img {
+    display:none;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+      font-size: 3.5em;
+  }
+  .home {
+      min-height: 70vh;
+  }
+  header {
+      min-height: 70vh;
+  }
+  blockquote {
+      padding: 10% 5% 0%;
+  }
+  .project {
+    min-height: 300px;
+  }
+}
